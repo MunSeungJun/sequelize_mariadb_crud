@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container mx-auto wide">
+        <h1 class="text-center">{{ subtitle }}</h1>
+        <form autocomplete="off" id="user__form">
+            <fieldset>
+                <legend>사용자 등록</legend>
+                <div>
+                    <label for="user__name">이름</label>
+                    <input type="text" id="user__name" name="user__name">
+                </div>
+                <div>
+                    <label for="age">나이</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div>
+                    <label for="married">결혼여부</label>
+                    <input type="checkbox" id="married" name="married">
+                </div>
+                <input type="submit" value="등록">
+            </fieldset>
+        </form>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
